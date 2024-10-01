@@ -10,13 +10,14 @@ The CART algorithm uses a greedy approach to split data (Gini Impurity (or) Entr
 ## Decision Tree Classifier
 In order to build a decision tree classifier, we need to find something called _Gini Impurity_ (or) _Entropy_ for each potential split in data and then we split the data based on the _Gini Impurity_ (we try to split such that the Gini Impurity is minimum) then we recursively build the tree, i.e., repeat the process of creating branches and leaves until a stopping condition is met (like maximum depth, minimum samples per node, or perfect purity).
 
+For prediction, traverse the tree to predict the class for each sample.
+
 >[!NOTE]
 >Gini Impurity is a metric used to classify data <br>
 >Gini Impurity varies from 0 to 1, where 0 depicts that all the elements are allied to a certain class or only one class exists and a Gini Impurity close to 1 means a high level of impurity where each class consists of a small fraction of elements. A value of $1- 1/n$ occurs when the elements are uniformly distributed into _n_ classes and each class has a probability of $1/n$ <br>
 >Mathematically the Gini Impurity is given by <br> 
 > $Gini \space Impurity =  1 - \displaystyle\sum_{i=0}^n p_i ^ 2$
 
-For prediction, traverse the tree to predict the class for each sample.
 
 ## Decision Tree Regressor
 

@@ -20,7 +20,9 @@ For prediction, traverse the tree to predict the class for each sample.
 
 
 ## Decision Tree Regressor
+In order to build a decision tree regressor, calculate Mean Squared Error (MSE) (this is the metric for regression tasks), where we evaluate the MSE for splits and choose the one that minimizes the error. Then, split the data (similar to the classification case, we split based on the feature values and thresholds). Now, recursively build the tree.
 
+For regression, the prediction is the mean value of the samples in the leaf nodes.
 
 
 ### NOTE

@@ -5,7 +5,8 @@ Decision trees are also the fundamental components of random forests, which are 
 I've tried to implement Decision Tree Classifier and Regressor using the CART (Classification and Regression Trees) algorithm that is used by `scikit-learn` \
 CART builds a tree-like structure consisting of nodes and branches. The nodes represent different decision points and the branches the possible outcomes of that decision. \
 The leaf nodes contain a predicted class label or value for the target variable. \
-The CART algorithm uses a greedy approach to split data (Gini Impurity (or) Entropy for Classification and Mean Squared Error for Regression)
+The CART algorithm uses a greedy approach to split data (Gini Impurity (or) Entropy for Classification and Mean Squared Error for Regression) \
+Click [here](https://scikit-learn.org/stable/modules/tree.html) to go to the documentation of decision trees by `scikit-learn`
 
 ## Decision Tree Classifier
 In order to build a decision tree classifier, we need to find something called _Gini Impurity_ (or) _Entropy_ for each potential split in data and then we split the data based on the _Gini Impurity_ (we try to split such that the Gini Impurity is minimum) then we recursively build the tree, i.e., repeat the process of creating branches and leaves until a stopping condition is met (like maximum depth, minimum samples per node, or perfect purity).

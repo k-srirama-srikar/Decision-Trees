@@ -16,7 +16,8 @@ For prediction, traverse the tree to predict the class for each sample.
 >Gini Impurity is a metric used to classify data <br>
 >Gini Impurity varies from 0 to 1, where 0 depicts that all the elements are allied to a certain class or only one class exists and a Gini Impurity close to 1 means a high level of impurity where each class consists of a small fraction of elements. A value of $1- 1/n$ occurs when the elements are uniformly distributed into _n_ classes and each class has a probability of $1/n$ <br>
 >Mathematically the Gini Impurity is given by <br> 
-> $Gini \space Impurity =  1 - \displaystyle\sum_{i=0}^n p_i ^ 2$
+> $Gini \space Impurity =  1 - \displaystyle\sum_{i=0}^n p_i ^ 2$ <br>
+> where, _p<sub>i</sub>_ is the probability of the i<sup>th</sup> object being classified to a particular class
 
 
 ## Decision Tree Regressor
